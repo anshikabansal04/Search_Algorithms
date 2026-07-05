@@ -10,7 +10,8 @@
 
 class Grid {
 public:
-    Grid(int rows, int cols, int cellSize);
+   
+    Grid(int rows, int cols, int cellSize); // Definations
 
     int rows() const { return rows_; }
     int cols() const { return cols_; }
@@ -31,6 +32,16 @@ public:
     void draw() const;
 
 private:
+    /**
+    * @brief This function checks if the given row and column indices are within the bounds of the grid.
+    * 
+    * @param row Number of rows
+    * @param col Number of columns
+    * @param cellSize size of cell
+
+    * @return true 
+    * @return false 
+    */
     bool inBounds(int row, int col) const;
 
     int rows_;

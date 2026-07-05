@@ -5,11 +5,12 @@ const Color kTileColor = {245, 245, 245, 255};  // light grey fill
 const Color kLineColor = {200, 200, 200, 255};  // grid lines
 }  // namespace
 
-Grid::Grid(int rows, int cols, int cellSize)
+Grid::Grid(int rows, int cols, int cellSize) // Constructor
     : rows_(rows),
       cols_(cols),
       cellSize_(cellSize),
       cells_(static_cast<size_t>(rows) * cols, kTileColor) {}
+
 
 bool Grid::inBounds(int row, int col) const {
     return row >= 0 && row < rows_ && col >= 0 && col < cols_;
