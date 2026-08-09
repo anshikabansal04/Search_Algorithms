@@ -1,0 +1,17 @@
+rows: 20
+cols: 30
+
+start:
+  row: 0
+  col: 0
+
+goal:
+  row: 19
+  col: 29
+
+obstacles:
+  - [5, 5]
+  - [5, 6]
+  - [5, 7]
+  - [5, 8]
+  - [5, 9]
