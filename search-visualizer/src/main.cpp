@@ -15,7 +15,6 @@ void readMapFile(int& rows,int& cols,int& startRow,int& startCol, int& goalRow,i
         std::cout << "Failed to open map.yaml" << std::endl;
         return;
     }
-
     std::string line;
     bool readingStart = false;
     bool readingGoal = false;

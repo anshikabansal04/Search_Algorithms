@@ -7,7 +7,7 @@
 using namespace std;
 int Search::heuristic(Node*a, Node*b)
 {
-      return abs(a->row - b->row) + abs(a->col - b->col);
+    return abs(a->row - b->row) + abs(a->col - b->col);
 }
 
 void Search::astar(vector<vector<Node>>& nodes, Node* start, Node* end,Grid &grid){
